@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: stretch;
+
+  #rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    order: 0;
+    padding-bottom: 5px;
+    flex-basis: 100%;
+    overflow: scroll;
+
+    #rows-inner {
+      flex: 0 1 auto;
+
+      .row {
+        display: flex;
+
+        .name {
+          flex: 0 1 150px;
+          text-align: right;
+          padding-right: 10px;
+        }
+
+        .chat {
+          flex: 0 1 100%;
+        }
+      }
+    }
+  }
+
+  #editor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 100px;
+    height: 100px;
+
+    #input {
+      width: 100%;
+      flex: 0 1 100%;
+      font-size: 20px;
+      padding: 5px;
+      margin: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
