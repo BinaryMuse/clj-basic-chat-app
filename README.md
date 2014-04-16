@@ -1,6 +1,4 @@
-# irc
-
-FIXME
+# Clojure/ClojureScript Chat App
 
 ## Prerequisites
 
@@ -14,6 +12,12 @@ To start a web server for the application, run:
 
     lein run
 
+If you make changes to the ClojureScript, start continuous compilation with
+
+    lein cljsbuild auto
+
 ## License
 
-Copyright © 2014 FIXME
+MIT License
+
+Copyright © 2014 Brandon Tilley
